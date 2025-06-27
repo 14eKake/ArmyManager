@@ -26,6 +26,8 @@ Ce dépôt contient une solution **.NET 8** destinée à illustrer la gestion d'
 # Lance l'application WPF principale
  dotnet run --project UI/UI.csproj
 ```
+Lors du premier lancement, une base SQLite `game.db` est créée dans le dossier du projet
+et remplie avec trois exemples de `UnitType`.
 
 ## Tests
 
