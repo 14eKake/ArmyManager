@@ -14,6 +14,8 @@ public class GameDbContext : DbContext
     public DbSet<UnitType> UnitTypes => Set<UnitType>();
     public DbSet<UnitStack> UnitStacks => Set<UnitStack>();
     public DbSet<Army> Armies => Set<Army>();
+    public DbSet<Player> Players => Set<Player>();
+    public DbSet<Building> Buildings => Set<Building>();
 
     protected override void OnModelCreating(ModelBuilder mb)
     {
@@ -60,6 +62,15 @@ public class GameDbContext : DbContext
                 ManpowerCost = 2,
                 Cost = new() { { ResourceType.Gold, 120 }, { ResourceType.Food, 40 }, { ResourceType.Metal, 30 } }
             }
+        );
+
+        // Player de base avec quelques ressources
+        mb.Entity<Player>().HasData(new Player { Id = 1, Name = "Player" });
+        mb.Entity<ResourceStock>().HasData(
+            new { Id = 1, PlayerId = 1, Type = ResourceType.Gold, Amount = 500 },
+            new { Id = 2, PlayerId = 1, Type = ResourceType.Food, Amount = 300 },
+            new { Id = 3, PlayerId = 1, Type = ResourceType.Metal, Amount = 200 },
+            new { Id = 4, PlayerId = 1, Type = ResourceType.Manpower, Amount = 50 }
         );
     }
 }
