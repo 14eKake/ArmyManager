@@ -31,11 +31,11 @@ public partial class App : Application
     {
         await _host.StartAsync();
 
-        // Migration automatique
+        // Création de la base (avec insertion des données seedées)
         using (var scope = _host.Services.CreateScope())
         {
             var db = scope.ServiceProvider.GetRequiredService<GameDbContext>();
-            await db.Database.MigrateAsync();
+            await db.Database.EnsureCreatedAsync();
         }
 
         // Afficher la fenêtre principale
