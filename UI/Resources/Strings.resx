@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Army Manager</value>
+  </data>
+  <data name="Resource" xml:space="preserve">
+    <value>Ressource</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Unit" xml:space="preserve">
+    <value>Unité</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Créer</value>
+  </data>
+  <data name="QuantityLabel" xml:space="preserve">
+    <value>Quantité :</value>
+  </data>
+  <data name="Train" xml:space="preserve">
+    <value>Former</value>
+  </data>
+  <data name="Attack" xml:space="preserve">
+    <value>Attaque</value>
+  </data>
+  <data name="Defense" xml:space="preserve">
+    <value>Défense</value>
+  </data>
+  <data name="Speed" xml:space="preserve">
+    <value>Vitesse</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Coût</value>
+  </data>
+  <data name="Manpower" xml:space="preserve">
+    <value>Manpower</value>
+  </data>
+</root>

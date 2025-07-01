@@ -3,7 +3,7 @@
 namespace Core.Models;
 
 /// <summary>Gabarit d’un type d’unité : coût, stats de base…</summary>
-public class UnitType
+public partial class UnitType
 {
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
